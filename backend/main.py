@@ -37,6 +37,7 @@ client = BinanceTestClient(api_key, api_secret)
 async def health():
     return {"message": "OK"}
 
+#Informacion de Cuenta
 
 @app.get("/api/account")
 async def get_account() -> AccountInfo:
